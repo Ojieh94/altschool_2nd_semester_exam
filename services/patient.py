@@ -36,7 +36,7 @@ class PatientService:
             raise HTTPException(
                 detail='Patient does not exist.', status_code=404)
 
-        if payload.name is not  None:
+        if payload.name is not None:
             patient.name = payload.name
         if payload.age is not None:
             patient.age = payload.age

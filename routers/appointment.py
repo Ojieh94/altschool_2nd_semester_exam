@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter
 
 from schema.appointment import AppointmentsCreateEdit, appointments
 from services.appointment import AppointmentService

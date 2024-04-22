@@ -1,8 +1,6 @@
 from fastapi import HTTPException
 from schema.doctor import DoctorsAvailabilityStatus, doctors
 from schema.appointment import AppointmentsStatus, appointments
-from schema.patient import patients
-
 
 
 

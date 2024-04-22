@@ -47,7 +47,7 @@ class AppointmentService:
         appointment = AppointmentHelpers.get_appointment_by_id(appointment_id)
 
      # Check if the patient_id in the payload is already associated with another appointment
-     
+
         for existing_appointment in appointments.values():
             if existing_appointment.id != appointment_id and existing_appointment.patient.id == payload.patient_id:
                 raise HTTPException(
